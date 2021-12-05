@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Title of my page</title>
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="author" content="Manas Pant">
+        <meta name="description" content = "Learning HTML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <h3>HTML headings <br /></h3>
+
+        <h1>Hello World</h1>
+        <h2>Hello World</h2>
+        <h3>Hello World</h3>
+        <h4>Hello World</h4>
+        <h5>Hello World</h5>
+        <h6>Hello World</h6>
+        <br />
+
+        <h3>HTML paragraphs :- <br /></h3>
+        <p>Dennis Ritchie started this...</p>
+        <br />
+
+        <h3>HTML links :- </h3>
+        <a href="https://www.google.com" target="_blank">Google Link</a>
+        <br />
+
+        <h3>HTML images tag :- <br /></h3>
+        <img src = "Images/html5.png" />
+        <br />
+
+        <h2>Attributes in HTML5</h2>
+
+        <ol>
+            <li>href :- inside the links in a tag its to define the link path</li>
+            <li>src :- inside the img tag and its to define the source of the image path</li>
+            <li>width and height :- used inside mainly image element fr width and height of image</li>
+            <li>alt :- Its the attribute for alternative if image does not appear</li>
+            <li>title :- It is generally added to all the elements that have text and it shows a tooltip with value in the browser</li>
+            <li>style :- To specify inline style for the element</li>
+            <li>lang :- It defines the language of the web page. Generally added to HTML tag</li>
+        </ol>
+
+        <div style="border:1px solid black">
+            <img src="" alt="HTML 5" width="100px" height="100px">
+            <a href="https://www.youtube.com">YOUTUBE</a>
+            <p title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur?">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur?</p>
+        </div>
+
+        <h2>Paragraphs :-</h2>
+        <ol>
+            <li>Horizontal Line :- The hr tag that adds a line</li>
+            <li>Line Breaks :- the br tag is used to break line at any point</li>
+            <li>Pre tag :- This tag ensures the line height and the order in which we have added the text in the editor is maintained</li>
+        </ol>
+
+        <h2>Example :-</h2>
+        <h3>1. HR tag</h3>
+        <p>Hello World was first quoted by Dennis Ritchie...</p>
+        <hr>
+        <p>Graham Bell was the inventor of the telephone</p>
+        <h3>2. Line Break</h3>
+        <p>Albert Einstein was a great physicts</p>
+        <br>
+        <p>Issac Newton was creator of calculus</p>
+
+        <h3>PRE Tag </h3>
+        <pre>
+            MY name is Manas Pant
+            I am trying to learn the pre tags
+            And we should be working to learn the tags first
+        </pre>
+
+        <h2>Text Formatting :-</h2>
+        <ol>
+            <li>b :- bold</li>
+            <li>i :- italic</li>
+            <li>mark :- highlight the text</li>
+            <li>del :- delete the text. The texted is just lined </li>
+            <li>ins :- inserts the text</li>
+            <li>sub :- subscript of a text</li>
+            <li>sup :- superscript of a text</li>
+        </ol>
+
+        <h2>Example :-</h2>
+        
+        <h3>1. b</h3>
+        <p>Hello <b>World!</b></p>
+        
+        <h3>2. i</h3>
+        <p>Hello <i>World!</i></p>
+        
+        <h3>3. mark</h3>
+        <p>Hello <mark>World!</mark></p>
+        
+        <h3>4. del</h3>
+        <p>Hello <del>Universe!</del> World!</p>
+        
+        <h3>5. ins</h3>
+        <p>Hello <ins>World!</ins></p>
+        
+        <h3>6. sub</h3>
+        <p>Formula for water is H<sub>2</sub>O</p>
+
+        <h3>6. sup</h3>
+        <p>The way covid is spreading is e<sup>x</sup> where x is number of days</p>
+
+        <h2>Image Formatting and Image Map</h2>
+        <ol>Image Map 
+            <li>map :- it defines the area for a clickable map inside the image. Generally in an image we use attribute usemap and that tag we use to define the id for the map</li>
+            <li>area :- It defines the area in which we will be having the clickable part for the image</li>
+            <li>shape :- We need to define the shape of that clickable part as an attribute inside the area. The shapes are circle, polygon, rectangle etc.</li>
+            <li>coords :- according to the shape we need to define the coordinates. For rectangle its just x,y points. For circle first the center needs to be located and then the radius needs to be mentioned</li>
+        </ol>
+
+        <h3>Example</h3>
+        <img src="Images/html5.png" alt="HTML 5" usemap="mymap">
+        <map name="mymap">
+            <area shape="rect" coords="34, 44, 270, 350" href="https://www.google.com">
+            <area shape="circle" coords="65, 79 20" href="https://www.youtube.com">
+        </map>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Bruce</td>
+                <td>43</td>
+                <td>brucewayne@gmail.com</td>
+            </tr>
+        </table>
+
+        <h2>IFrame in HTML 5</h2>
+        <p>IFrames are basically used to add a webpage inside a webpage itself</p>
+
+        <h3>Example :-</h3>
+        <iframe src="iframe.html" frameborder="1" name="iframe"></iframe>
+
+        <br>
+        <a href="http://www.youtube.com" target="iframe">Youtube Link</a>
+        <br />
+
+        <h2>Head Tag in HTML</h2>
+
+        <h3>Head tag is basically where our style, script and other properties are added</h3>
+        <ol>
+            <li>the link tag :- it is used to specify any external links we will be using in the file, like fonts, css, favicon etc</li>
+            <li>title :- it is the tag that has the title of the webpage</li>
+            <li>meta :- The important properties about the page are added here, like viewport, etc</li>
+        </ol>
+
+
+        <h2>Some Useful HTML Character Entities</h2>
+        <table class="ws-table-all notranslate">
+            <tbody><tr>
+              <th>Result</th>
+              <th>Description</th>
+              <th>Entity Name</th>
+              <th>Entity Number</th>
+              <th style="width:10%">Try it</th>      
+            </tr>
+            <tr>
+              <td style="height: 29px"></td>
+              <td style="height: 29px">non-breaking space</td>
+              <td style="height: 29px">&amp;nbsp;</td>
+              <td style="height: 29px">&amp;#160;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_nbsp">Try it »</a></td>      
+            </tr>
+            <tr>
+              <td>&lt;</td>
+              <td>less than</td>
+              <td>&amp;lt;</td>
+              <td>&amp;#60;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_lt">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>&gt;</td>
+              <td>greater than</td>
+              <td>&amp;gt;</td>
+              <td>&amp;#62;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_gt">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>&amp;</td>
+              <td>ampersand</td>
+              <td>&amp;amp;</td>
+              <td>&amp;#38;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_amp">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>"</td>
+              <td>double quotation mark </td>
+              <td>&amp;quot;</td>
+              <td>&amp;#34;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_quot">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>'</td>
+              <td>single quotation mark (apostrophe) </td>
+              <td>&amp;apos;</td>
+              <td>&amp;#39;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_apos">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>¢</td>
+              <td>cent</td>
+              <td>&amp;cent;</td>
+              <td>&amp;#162;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_cent">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>£</td>
+              <td>pound</td>
+              <td>&amp;pound;</td>
+              <td>&amp;#163;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_pound">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>¥</td>
+              <td>yen</td>
+              <td>&amp;yen;</td>
+              <td>&amp;#165;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_yen">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>€</td>
+              <td>euro</td>
+              <td>&amp;euro;</td>
+              <td>&amp;#8364;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_euro">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>©</td>
+              <td>copyright</td>
+              <td>&amp;copy;</td>
+              <td>&amp;#169;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_copy">Try it »</a></td>
+            </tr>
+            <tr>
+              <td>®</td>
+              <td>registered trademark</td>
+              <td>&amp;reg;</td>
+              <td>&amp;#174;</td>
+              <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="tryit.asp?filename=tryhtml_ent_reg">Try it »</a></td>
+            </tr>
+            </tbody></table>
+
+
+            <h2>FORMS IN HTML</h2>
+
+            <h3>HTML Forms</h3>
+            <ol>
+                <li>form :- the element is used to add a form that we will be submitting in the server</li>
+                <li>input :- The basic idea of input is the type of input we are making. We have input as text, textarea, radio button and checkbox. Also input has attributes as type and name. Name is important to send the data to the server</li>
+            </ol>
+
+            <h3>Example</h3>
+            <h4>Radio Buttons</h4>
+            <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+              </form>
+              <h4>Checkboxes</h4>
+              <form>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+              </form>
+
+              <h4>Submit button and action attribute for form</h4>
+              <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+
+
+              <h2>Attributes used in form</h2>
+              <ol>
+                  <li>action = The attribute tells to which server we need to make call after submitting the form</li>
+                  <li>method = Specifies which type of method to be used GET,POST etc</li>
+                  <li>autocomplete = It specifies the browser that should it complete the form automatically or not</li>
+                  <li>target = Tells what to do with form to new page or same page just like link.</li>
+              </ol>
+              <table class="ws-table-all notranslate"> 
+                <tbody><tr>
+                  <th style="width:20%">Value</th>
+                  <th>Description</th>
+                </tr>  
+                <tr>
+                  <td>_blank</td>
+                  <td>The response is displayed in a new window or tab</td>
+                </tr>
+                <tr>
+                  <td>_self</td>
+                  <td>The response is displayed in the current window</td>
+                </tr>
+                <tr>
+                  <td>_parent</td>
+                  <td>The response is displayed in the parent frame</td>
+                </tr>
+                <tr>
+                  <td>_top</td>
+                  <td>The response is displayed in the full body of the window</td>
+                </tr>
+                <tr>
+                  <td><i>framename</i></td>
+                  <td>The response is displayed in a named iframe</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2>Attribute LIst</h2>
+            <div class="w3-responsive">
+                <table class="ws-table-all">
+                 <tbody><tr>
+                  <th>Attribute</th>
+                  <th>Description</th>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_accept_charset.asp">accept-charset</a></td>
+                  <td>Specifies the character encodings used for form submission</td>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_action.asp">action</a></td>
+                  <td>Specifies where to send the form-data when a form is submitted</td>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_autocomplete.asp">autocomplete</a></td>
+                  <td>Specifies whether a form should have autocomplete on or off</td>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_enctype.asp">enctype</a></td>
+                  <td>Specifies how the form-data should be encoded when submitting it to the 
+                  server (only for method="post")</td>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_method.asp">method</a></td>
+                  <td>Specifies the HTTP method to use when sending form-data</td>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_name.asp">name</a></td>
+                  <td>Specifies the name of the form</td>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_novalidate.asp">novalidate</a></td>
+                  <td>Specifies that the form should not be validated when submitted</td>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_rel.asp">rel</a></td>
+                  <td>Specifies the relationship between a linked resource and the current 
+                  document</td>
+                 </tr>
+                 <tr>
+                  <td><a href="/tags/att_form_target.asp">target</a></td>
+                  <td>Specifies where to display the response that is received after submitting 
+                  the form</td>
+                 </tr>
+                </tbody></table>
+                </div>
+
+                <h2>HTML Form Elements</h2>
+                <table class="ws-table-all notranslate">
+                  <tbody><tr>
+                  <th>Tag</th>
+                  <th>Description</th>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_form.asp">&lt;form&gt;</a></td>
+                  <td> Defines an HTML form for user input</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_input.asp">&lt;input&gt;</a></td>
+                  <td>Defines an input control</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_textarea.asp">&lt;textarea&gt;</a></td>
+                  <td>Defines a multiline input control (text area)</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_label.asp">&lt;label&gt;</a></td>
+                  <td>Defines a label for an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_fieldset.asp">&lt;fieldset&gt;</a></td>
+                  <td>Groups related elements in a form</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_legend.asp">&lt;legend&gt;</a></td>
+                  <td>Defines a caption for a &lt;fieldset&gt; element</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_select.asp">&lt;select&gt;</a></td>
+                  <td>Defines a drop-down list</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_optgroup.asp">&lt;optgroup&gt;</a></td>
+                  <td>Defines a group of related options in a drop-down list</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_option.asp">&lt;option&gt;</a></td>
+                  <td>Defines an option in a drop-down list</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_button.asp">&lt;button&gt;</a></td>
+                  <td>Defines a clickable button</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_datalist.asp">&lt;datalist&gt;</a></td>
+                  <td>Specifies a list of pre-defined options for input controls</td>
+                  </tr>
+                  <tr>
+                  <td><a href="/tags/tag_output.asp">&lt;output&gt;</a></td>
+                  <td>Defines the result of a calculation</td>
+                  </tr>
+                  </tbody></table>
+
+
+                  <h1>On Drag and Drop HTML</h1>
+                  <div class="container">
+                  <div>
+                      <img id="div1" src="Images/html5.png" alt="HTML5" width="100px" height="100px" draggable="true" ondragstart="drag(event)">
+                  </div>
+                  <div id="div2" style="width: 120px; height: 120px; border: 1px solid black;" ondragover="allowDrop(event)" ondrop="drop(event)">
+                  </div>
+                </div>
+    </body>
+    <script>
+      function drag(ev){
+        ev.dataTransfer.setData("text",ev.target.id);
+      }
+      function allowDrop(ev){
+        ev.preventDefault();
+      }
+      function drop(ev){
+        ev.preventDefault();
+        let data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+</html>
